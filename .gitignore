@@ -1,5 +1,8 @@
 # Prerequisites
 *.d
+build/
+*.pro.user
+*.pro.user.*
 
 # Compiled Object files
 *.slo

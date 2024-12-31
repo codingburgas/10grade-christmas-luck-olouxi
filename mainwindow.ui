@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-image: url(&quot;:/images/img/main window.png&quot;);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>391</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;comic Sans MS&quot;; /* Замените на нужный шрифт, если известен */
+    font-size: 30px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    letter-spacing: 2px; /* Пространство между буквами */
+    color: rgb(0, 0, 0); /* Чёрный текст */
+    text-transform: uppercase; /* Преобразовать текст в заглавные буквы */
+    background: transparent; /* Прозрачный фон */
+    qproperty-alignment: 'AlignCenter'; /* Выравнивание текста по центру */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>EVOLUTIONARY TREE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>-15</x>
+      <y>195</y>
+      <width>691</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border: none; /* Убирает границу */
+    background: transparent; /* Убирает фон (если требуется) */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>-120</y>
+      <width>901</width>
+      <height>891</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 1,
+        stop: 0 rgba(240, 248, 255, 255), /* Светло-голубой, ближе к белому */
+        stop: 1 rgba(220, 235, 250, 255)  /* Чуть более выраженный голубой */
+    );
+  
+
+    
+    
+    border: none;
+    border-radius: 15px;
+
+
+    
+    
+
+
+border-top-left-radius: 200px;  
+    border-bottom-left-radius: 200px;
+    padding: 60px; 
+   }
+
+</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>400</y>
+       <width>931</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+        stop:0 rgb(217, 217, 217),
+        stop:1 rgb(103, 136, 207)); 
+    color: #333333;
+    border-radius: 8px;
+    border: 1px solid rgb(103, 136, 207); 
+    padding: 10px; 
+ font-family: &quot;Mongolian Baiti&quot;; /* Или замените на нужный шрифт */
+    font-size: 30px; /* Настройте размер шрифта */
+    font-weight: normal; /* Сделать шрифт обычным */
+    color: rgb(0, 0, 0);
+ qproperty-alignment: 'AlignCenter';
+
+
+    color: #000000; /* Цвет текста */
+border-bottom-left-radius: 0px;
+border-top-left-radius: 0px;
+padding: 20px;
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>1050</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+        stop:0 rgb(217, 217, 217),
+        stop:1 rgb(103, 136, 207)); 
+    color: #333333;
+    border-radius: 8px;
+    border: 1px solid rgb(103, 136, 207); 
+    padding: 10px; 
+
+
+ 
+    color: #000000; /* Цвет текста */ Закругляем углы */
+
+
+
+
+border-top-left-radius: 14px;
+padding: 20px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>625</x>
+       <y>220</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+background-color: rgb(157, 212, 234);
+
+        
+    color: #333333; /* Тёмно-серый текст */
+    border-radius: 8px; /* Закруглённые углы */
+    border: 1px solid #9DD4EA; /* Тонкая рамка в цвете основного оттенка */
+    padding: 5px 10px; /* Отступы для текста */
+border: 1px solid rgb(100, 100, 100);
+
+}
+QLineEdit:focus {
+    border: 2px solid #6B8E23; /* Цвет при фокусе */
+
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>647</y>
+       <width>251</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    border: none; /* Убирает границу */
+    background: transparent; /* Убирает фон (если требуется) */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>75</x>
+       <y>220</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: rgb(157, 212, 234);
+
+        
+    color: #333333; /* Тёмно-серый текст */
+    border-radius: 8px; /* Закруглённые углы */
+    border: 1px solid #9DD4EA; /* Тонкая рамка в цвете основного оттенка */
+    padding: 5px 10px; /* Отступы для текста */
+border: 1px solid rgb(100, 100, 100);
+
+}
+QPushButton:focus {
+    border: 2px solid #6B8E23; /* Цвет при фокусе */
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>220</y>
+       <width>250</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: rgb(157, 212, 234);
+
+        
+    color: #333333; /* Тёмно-серый текст */
+    border-radius: 8px; /* Закруглённые углы */
+    border: 1px solid #9DD4EA; /* Тонкая рамка в цвете основного оттенка */
+    padding: 5px 10px; /* Отступы для текста */
+border: 1px solid rgb(100, 100, 100);
+
+}
+QPushButton:focus {
+    border: 2px solid #6B8E23; /* Цвет при фокусе */
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+    <zorder>label_2</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>label_3</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>label</zorder>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;comic Sans MS&quot;; /* Замените на нужный шрифт, если известен */
+    font-size: 30px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    letter-spacing: 2px; /* Пространство между буквами */
+    color: rgb(0, 0, 0); /* Чёрный текст */
+    text-transform: uppercase; /* Преобразовать текст в заглавные буквы */
+    background: transparent; /* Прозрачный фон */
+    qproperty-alignment: 'AlignCenter'; /* Выравнивание текста по центру */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>_VISUALIZER_</string>
+    </property>
+   </widget>
+   <zorder>label_5</zorder>
+   <zorder>widget</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
