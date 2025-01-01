@@ -166,7 +166,7 @@ padding: 20px;
     <widget class="QLineEdit" name="SearchLine">
      <property name="geometry">
       <rect>
-       <x>625</x>
+       <x>623</x>
        <y>220</y>
        <width>210</width>
        <height>60</height>
@@ -214,7 +214,7 @@ QLineEdit:focus {
     <widget class="QPushButton" name="MainButton">
      <property name="geometry">
       <rect>
-       <x>75</x>
+       <x>73</x>
        <y>220</y>
        <width>210</width>
        <height>60</height>
@@ -244,7 +244,7 @@ QPushButton:focus {
     <widget class="QPushButton" name="CategoryButton">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>308</x>
        <y>220</y>
        <width>290</width>
        <height>60</height>

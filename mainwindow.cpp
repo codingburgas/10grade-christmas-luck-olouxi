@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("Main page");
+    ui->SearchLine->setPlaceholderText("Search");
     QPixmap pix(":/images/img/logo.png");
     ui->label_3->setPixmap(pix);
     QPixmap pix2(":/images/img/tree3.png");
