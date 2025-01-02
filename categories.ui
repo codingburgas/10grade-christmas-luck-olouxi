@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,9 +26,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
-     <width>640</width>
-     <height>1080</height>
+     <y>-80</y>
+     <width>721</width>
+     <height>881</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -41,7 +41,7 @@
   
     border: none;
 
-
+border-bottom-right-radius: 200px;  
 border-top-right-radius: 200px;  
 
     padding: 60px; 
@@ -179,33 +179,6 @@ border: 1px solid rgb(100, 100, 100);
     </property>
     <property name="text">
      <string>Pick a type</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>325</y>
-      <width>471</width>
-      <height>1080</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-    background-color: green
-
-    border: 1px solid rgb(103, 136, 207); 
-    padding: 10px; 
- 
-    color: #000000;
-
-border-top-left-radius: 14px;
-padding: 20px;
-
-}</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QTreeWidget" name="treeWidget">

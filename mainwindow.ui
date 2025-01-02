@@ -35,7 +35,7 @@
     font-size: 32px;
     font-weight: bold; 
     letter-spacing: 2px; 
-    color: rgb(0, 0, 0);
+    color: #7F4C4C;
     text-transform: uppercase; 
     background: transparent; 
     qproperty-alignment: 'AlignCenter'; 
@@ -44,26 +44,6 @@
     </property>
     <property name="text">
      <string>EVOLUTIONARY TREE</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>-15</x>
-      <y>195</y>
-      <width>691</width>
-      <height>491</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-    border: none; /*delete border */
-    background: transparent; /* delete background*/
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QWidget" name="widget" native="true">
@@ -97,7 +77,7 @@ border-top-left-radius: 200px;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>-20</x>
        <y>400</y>
        <width>931</width>
        <height>321</height>
@@ -108,17 +88,17 @@ border-top-left-radius: 200px;
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
         stop:0 rgb(217, 217, 217),
         stop:1 rgb(103, 136, 207)); 
-    color: #333333;
+    color:  #092541;
     border-radius: 8px;
     border: 1px solid rgb(103, 136, 207); 
     padding: 10px; 
- font-family: &quot;Mongolian Baiti&quot;;
+ font-family: &quot;comic Sans MS&quot;;
     font-size: 30px; 
     font-weight: normal;
-    color: rgb(0, 0, 0);
+    color:  #092541;
  qproperty-alignment: 'AlignCenter';
 
-    color: #000000; 
+    color:  #092541; 
 border-bottom-left-radius: 0px;
 border-top-left-radius: 0px;
 padding: 20px;
@@ -129,7 +109,10 @@ padding: 20px;
 </string>
      </property>
      <property name="text">
-      <string/>
+      <string>This app allows you to explore the ancestors of 
+           various organisms, trace evolutionary branches,
+observe the succession of generations — all in just a 
+couple of clicks!</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -268,12 +251,62 @@ QPushButton:focus {
       <string>Search</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>-80</x>
+       <y>360</y>
+       <width>931</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    font-family: &quot;comic Sans MS&quot;; 
+    font-size: 24px;
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    color: #092541;
+    text-transform: uppercase; 
+    background: transparent; 
+    qproperty-alignment: 'AlignCenter'; 
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Welcome to &quot;Evolutionary Tree Visualizer&quot;!
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>337</x>
+       <y>120</y>
+       <width>321</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    font-family: &quot;Times new Roman&quot;; 
+    font-size: 50px;
+    padding: 1px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>OlouXi</string>
+     </property>
+    </widget>
     <zorder>label_2</zorder>
     <zorder>label_3</zorder>
     <zorder>CategoryButton</zorder>
     <zorder>label</zorder>
     <zorder>label_7</zorder>
     <zorder>pushButton</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_9</zorder>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
@@ -290,7 +323,7 @@ QPushButton:focus {
     font-size: 32px;
     font-weight: bold; 
     letter-spacing: 2px; 
-    color: rgb(0, 0, 0);
+    color: #7F4C4C;
     text-transform: uppercase; 
     background: transparent; 
     qproperty-alignment: 'AlignCenter'; 
@@ -301,10 +334,26 @@ QPushButton:focus {
      <string>_VISUALIZER_</string>
     </property>
    </widget>
-   <zorder>label_5</zorder>
-   <zorder>widget</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_4</zorder>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>200</y>
+      <width>691</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border: none; /*delete border */
+    background: transparent; /* delete background*/
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -312,7 +361,7 @@ QPushButton:focus {
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>18</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
