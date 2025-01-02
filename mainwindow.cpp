@@ -1,20 +1,33 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QVBoxLayout>
+#include <QApplication>
+#include <QLineEdit>
+#include <QIcon>
+#include <QWidget>
+#include <QVBoxLayout>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , MAINW(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    MAINW->setupUi(this);
+    category = new categories();
+    connect(category, &categories::MAINreturn, this, &MainWindow::show);
     setWindowTitle("Main page");
-    ui->SearchLine->setPlaceholderText("Search");
+
     QPixmap pix(":/images/img/logo.png");
-    ui->label_3->setPixmap(pix);
+    MAINW->label_3->setPixmap(pix);
     QPixmap pix2(":/images/img/tree3.png");
-    ui->label_4->setPixmap(pix2);
+    MAINW->label_4->setPixmap(pix2);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+    delete MAINW;
+}
+
+void MainWindow::on_CategoryButton_clicked()
+{
+    category->show();
+    this->close();
 }

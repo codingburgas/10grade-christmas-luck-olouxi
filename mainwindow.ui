@@ -74,8 +74,8 @@
      <rect>
       <x>420</x>
       <y>-120</y>
-      <width>901</width>
-      <height>891</height>
+      <width>900</width>
+      <height>890</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -147,13 +147,13 @@ padding: 20px;
         stop:0 rgb(217, 217, 217),
         stop:1 rgb(103, 136, 207)); 
     color: #333333;
-    border-radius: 8px;
+
     border: 1px solid rgb(103, 136, 207); 
     padding: 10px; 
  
     color: #000000;
 
-border-top-left-radius: 14px;
+
 padding: 20px;
 
 }
@@ -161,34 +161,6 @@ padding: 20px;
      </property>
      <property name="text">
       <string/>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="SearchLine">
-     <property name="geometry">
-      <rect>
-       <x>625</x>
-       <y>220</y>
-       <width>210</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit {
-background-color: rgb(157, 212, 234);
-
-        font: 32pt &quot;Mongolian Baiti&quot;;
-    color: rgb(110, 110, 110);
-    border-radius: 8px; 
-    border: 1px solid #9DD4EA; 
-    padding: 5px 10px;
-border: 1px solid rgb(100, 100, 100);
-
-}
-QLineEdit:focus {
-    border: 2px solid #6B8E23;
-
-}
-</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -211,42 +183,12 @@ QLineEdit:focus {
       <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="MainButton">
-     <property name="geometry">
-      <rect>
-       <x>75</x>
-       <y>220</y>
-       <width>210</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
-	font: 32pt &quot;Mongolian Baiti&quot;;
-background-color: rgb(157, 212, 234);
-    font-weight: bold; 
-    color: rgb(110, 110, 110);
-    border-radius: 8px;
-    border: 1px solid #9DD4EA; 
-    padding: 5px 10px; 
-border: 1px solid rgb(100, 100, 100);
-
-}
-QPushButton:focus {
-    border: 2px solid #6B8E23;
-}
-</string>
-     </property>
-     <property name="text">
-      <string>Main page</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="CategoryButton">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>285</x>
        <y>220</y>
-       <width>290</width>
+       <width>300</width>
        <height>60</height>
       </rect>
      </property>
@@ -272,12 +214,66 @@ QPushButton:focus {
       <string>Pick a category</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>220</y>
+       <width>222</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 32pt &quot;Mongolian Baiti&quot;;
+background-color: rgb(155, 210, 250);
+    font-weight: bold; 
+    color: rgb(110, 110, 110);
+    border-radius: 8px;
+    border: 1px solid #9DD4EA; 
+    padding: 5px 10px; 
+border: 1px solid rgb(100, 100, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Main page</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>608</x>
+       <y>220</y>
+       <width>220</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 32pt &quot;Mongolian Baiti&quot;;
+background-color: rgb(157, 212, 234);
+    font-weight: bold; 
+    color: rgb(110, 110, 110);
+    border-radius: 8px;
+    border: 1px solid #9DD4EA; 
+    padding: 5px 10px; 
+border: 1px solid rgb(100, 100, 100);
+
+}
+QPushButton:focus {
+    border: 2px solid #6B8E23;
+}</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
     <zorder>label_2</zorder>
-    <zorder>SearchLine</zorder>
     <zorder>label_3</zorder>
-    <zorder>MainButton</zorder>
     <zorder>CategoryButton</zorder>
     <zorder>label</zorder>
+    <zorder>label_7</zorder>
+    <zorder>pushButton</zorder>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">

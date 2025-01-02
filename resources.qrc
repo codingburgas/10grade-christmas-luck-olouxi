@@ -3,5 +3,7 @@
         <file>img/logo.png</file>
         <file>img/main window.png</file>
         <file>img/tree3.png</file>
+        <file>img/categoriesbackground.png</file>
+        <file>img/search.jpg</file>
     </qresource>
 </RCC>

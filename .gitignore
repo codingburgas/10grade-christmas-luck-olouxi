@@ -3,7 +3,7 @@
 build/
 *.pro.user
 *.pro.user.*
-
+*.autosave
 # Compiled Object files
 *.slo
 *.lo
