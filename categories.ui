@@ -25,10 +25,10 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>-80</y>
-     <width>721</width>
-     <height>881</height>
+     <x>-20</x>
+     <y>-100</y>
+     <width>701</width>
+     <height>931</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -47,13 +47,13 @@ border-top-right-radius: 200px;
     padding: 60px; 
    }</string>
    </property>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>180</y>
-      <width>1050</width>
-      <height>141</height>
+      <x>20</x>
+      <y>170</y>
+      <width>681</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -62,13 +62,13 @@ border-top-right-radius: 200px;
         stop:0 rgb(217, 217, 217),
         stop:1 rgb(103, 136, 207)); 
     color: #333333;
-    border-radius: 8px;
-    border: 1px solid rgb(103, 136, 207); 
+
+   border-top-right-radius: 25px;
     padding: 10px; 
  
     color: #000000;
 
-border-top-left-radius: 14px;
+
 padding: 20px;
 
 }
@@ -78,11 +78,11 @@ padding: 20px;
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="SearchLineCat">
+   <widget class="QLineEdit" name="SearchLineCat_2">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>220</y>
+      <x>440</x>
+      <y>200</y>
       <width>251</width>
       <height>60</height>
      </rect>
@@ -106,7 +106,7 @@ QLineEdit:focus {
 </string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -126,11 +126,11 @@ QLineEdit:focus {
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="returnButton">
+   <widget class="QPushButton" name="returnButton_2">
     <property name="geometry">
      <rect>
-      <x>15</x>
-      <y>220</y>
+      <x>40</x>
+      <y>200</y>
       <width>140</width>
       <height>60</height>
      </rect>
@@ -156,11 +156,11 @@ QPushButton:focus {
      <string>Return</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>220</y>
+      <x>210</x>
+      <y>200</y>
       <width>215</width>
       <height>60</height>
      </rect>
@@ -181,23 +181,138 @@ border: 1px solid rgb(100, 100, 100);
      <string>Pick a type</string>
     </property>
    </widget>
-   <widget class="QTreeWidget" name="treeWidget">
+   <widget class="QTreeWidget" name="treeWidget_2">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>450</y>
-      <width>256</width>
-      <height>192</height>
+      <x>50</x>
+      <y>310</y>
+      <width>451</width>
+      <height>511</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"> padding: px 2px; </string>
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #e6f7ff, stop:1 #cce7f0);
+    color: #003c8f;
+ border-radius: 1px;
+    font-family: 'Arial';
+    font-size: 14px;
+    padding: 8px;
+}
+QPushButton:hover {
+    background-color: #d6effc;
+}
+QPushButton:pressed {
+    background-color: #b3e5f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+padding: px 2px; </string>
     </property>
     <column>
      <property name="text">
       <string>1</string>
      </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI</family>
+       <pointsize>17</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::GoDown"/>
+     </property>
     </column>
+    <item>
+     <property name="text">
+      <string>Млекопитающие </string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferAntialias</stylestrategy>
+       <kerning>true</kerning>
+       <hintingpreference>PreferFullHinting</hintingpreference>
+      </font>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Новый элемент</string>
+     </property>
+    </item>
     <item>
      <property name="text">
       <string>Новый элемент</string>
@@ -303,6 +418,48 @@ border: 1px solid rgb(100, 100, 100);
       </item>
      </item>
     </item>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>110</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Times new Roman&quot;; 
+    font-size: 50px;
+    padding: 1px;
+background: transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>OlouXi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>660</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border: none;
+    background: transparent; 
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
  </widget>

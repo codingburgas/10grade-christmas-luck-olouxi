@@ -5,8 +5,10 @@ categories::categories(QWidget *parent)
     , ui(new Ui::categories)
 {
     ui->setupUi(this);
+    QPixmap pix(":/images/img/logo.png");
+    ui->label_4->setPixmap(pix);
     setWindowTitle("Info");
-    ui->SearchLineCat->setPlaceholderText("Search");
+    ui->SearchLineCat_2->setPlaceholderText("Search");
     //QAction *searchAction = new QAction(QIcon(":/images/img/search.jpg"), "", this);
     //ui->SearchLine->addAction(searchAction, QLineEdit::LeadingPosition);
 }
