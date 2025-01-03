@@ -185,7 +185,7 @@ border: 1px solid rgb(100, 100, 100);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>285</y>
+      <y>280</y>
       <width>531</width>
       <height>511</height>
      </rect>
@@ -379,8 +379,8 @@ background: transparent;
   <widget class="QWidget" name="animalCardWidget" native="true">
    <property name="geometry">
     <rect>
-     <x>790</x>
-     <y>190</y>
+     <x>750</x>
+     <y>130</y>
      <width>420</width>
      <height>520</height>
     </rect>
@@ -388,21 +388,29 @@ background: transparent;
    <property name="styleSheet">
     <string notr="true">QWidget {
     background: qlineargradient(
-        spread: pad, x1: 0, y1: 0, x2: 1, y2: 1,
-        stop: 0 rgba(240, 248, 255, 255), 
-        stop: 1 rgba(220, 235, 250, 255)  
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #FFFFFF,
+        stop: 1 #D3F5FF
     );
- border-radius: 20px; 
+    border: 2px solid #004080;
+    border-radius: 15px;
 }</string>
    </property>
    <widget class="QLabel" name="animalDescriptionLabel">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>270</y>
+      <y>280</y>
       <width>390</width>
       <height>210</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+    background: #D0F4FF;
+    border: 2px solid #006060;
+    border-radius: 20px;
+}</string>
     </property>
     <property name="text">
      <string>desc</string>
@@ -411,11 +419,18 @@ background: transparent;
    <widget class="QLabel" name="animalPhotoLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>50</y>
       <width>371</width>
       <height>181</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+    background: #D0F4FF;
+    border: 2px solid #006060;
+    border-radius: 20px;
+}</string>
     </property>
     <property name="text">
      <string>img</string>
@@ -424,50 +439,18 @@ background: transparent;
    <widget class="QLabel" name="animalInfoLabel1">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>235</y>
-      <width>50</width>
-      <height>15</height>
+      <x>30</x>
+      <y>240</y>
+      <width>81</width>
+      <height>21</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lanimalInfoLabel2">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>235</y>
-      <width>50</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>text</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="animalInfoLabel3">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>235</y>
-      <width>70</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>text</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="animalNameLabel">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+     background: #D0F4FF;
+   
+    border-radius: 20px;
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -476,14 +459,107 @@ background: transparent;
    <widget class="QPushButton" name="animalCardCloseButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>500</y>
-      <width>71</width>
-      <height>18</height>
+      <x>310</x>
+      <y>10</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #EFFFFF,
+        stop: 1 #B0E0E6
+    );
+    color: #004080;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    padding: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalInfoLabel2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>240</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+     background: #D0F4FF;
+   
+    border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalInfoLabel3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+     background: #D0F4FF;
+   
+    border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>-130</y>
+      <width>221</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 200px; 
+    font-weight: bold; 
+    border: none; 
+    margin: 0px; 
+    padding: 0px; 
+    color: rgb(238, 108, 123);
+    text-align: center;
+  qproperty-alignment: 'AlignCenter';
+  background-color: transparent;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Close card</string>
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
