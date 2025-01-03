@@ -25,3 +25,15 @@ void categories::on_returnButton_clicked()
     emit MAINreturn();
 }
 
+
+void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)
+{
+    QString ITEMtext = item->text(column);
+}
+
+
+void categories::on_animalCardCloseButton_clicked()
+{
+    ui->animalCardWidget->hide();
+}
+

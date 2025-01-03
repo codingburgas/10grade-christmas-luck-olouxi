@@ -186,7 +186,7 @@ border: 1px solid rgb(100, 100, 100);
      <rect>
       <x>20</x>
       <y>285</y>
-      <width>411</width>
+      <width>531</width>
       <height>511</height>
      </rect>
     </property>
@@ -248,103 +248,13 @@ QTreeWidget::item:hover {
      <property name="text">
       <string>Новый элемент</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Новый элемент</string>
-     </property>
      <item>
       <property name="text">
-       <string>Новый дочерний элемент</string>
+       <string>2.1</string>
       </property>
       <item>
        <property name="text">
-        <string>Новый дочерний элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
-      </item>
-     </item>
-     <item>
-      <property name="text">
-       <string>Новый элемент</string>
-      </property>
-      <item>
-       <property name="text">
-        <string>Новый дочерний элемент</string>
+        <string>3.1</string>
        </property>
        <item>
         <property name="text">
@@ -362,10 +272,20 @@ QTreeWidget::item:hover {
         </property>
        </item>
       </item>
+      <item>
+       <property name="text">
+        <string>3.2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3.3</string>
+       </property>
+      </item>
      </item>
      <item>
       <property name="text">
-       <string>Новый элемент</string>
+       <string>2.2</string>
       </property>
       <item>
        <property name="text">
@@ -385,7 +305,7 @@ QTreeWidget::item:hover {
      </item>
      <item>
       <property name="text">
-       <string>Новый элемент</string>
+       <string>2.3</string>
       </property>
       <item>
        <property name="text">
@@ -455,6 +375,117 @@ background: transparent;
    <zorder>label_14</zorder>
    <zorder>label_15</zorder>
    <zorder>label_4</zorder>
+  </widget>
+  <widget class="QWidget" name="animalCardWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>190</y>
+     <width>420</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 1,
+        stop: 0 rgba(240, 248, 255, 255), 
+        stop: 1 rgba(220, 235, 250, 255)  
+    );
+ border-radius: 20px; 
+}</string>
+   </property>
+   <widget class="QLabel" name="animalDescriptionLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>390</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>desk</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalPhotoLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>371</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>img</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalInfoLabel1">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>235</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>text</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lanimalInfoLabel2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>235</y>
+      <width>50</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>text</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalInfoLabel3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>235</y>
+      <width>70</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>text</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="animalNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="animalCardCloseButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>500</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close card</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
