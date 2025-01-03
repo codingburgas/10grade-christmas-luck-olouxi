@@ -184,45 +184,31 @@ border: 1px solid rgb(100, 100, 100);
    <widget class="QTreeWidget" name="treeWidget_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>310</y>
-      <width>451</width>
+      <x>20</x>
+      <y>285</y>
+      <width>411</width>
       <height>511</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #e6f7ff, stop:1 #cce7f0);
-    color: #003c8f;
- border-radius: 1px;
-    font-family: 'Arial';
+     <string notr="true">QTreeWidget {
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    border-radius: 8px;
     font-size: 14px;
-    padding: 8px;
-}
-QPushButton:hover {
-    background-color: #d6effc;
-}
-QPushButton:pressed {
-    background-color: #b3e5f5;
+    color: #333333; /* Dark text color */
 }
 
+QTreeWidget::item {
+    padding: 5px 10px;
+    border: none;
+    color: #333333; /* Normal text color */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-padding: px 2px; </string>
+QTreeWidget::item:hover {
+    background-color: #e6f7ff; /* Light blue on hover */
+    color: #000000; /* Darker text when hovered */
+}</string>
     </property>
     <column>
      <property name="text">
@@ -461,6 +447,14 @@ background: transparent;
      <string/>
     </property>
    </widget>
+   <zorder>treeWidget_2</zorder>
+   <zorder>label_8</zorder>
+   <zorder>SearchLineCat_2</zorder>
+   <zorder>label_13</zorder>
+   <zorder>returnButton_2</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_4</zorder>
   </widget>
  </widget>
  <resources/>
