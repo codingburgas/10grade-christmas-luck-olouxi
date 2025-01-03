@@ -78,7 +78,7 @@ padding: 20px;
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="SearchLineCat_2">
+   <widget class="QLineEdit" name="SearchLineCat">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -126,7 +126,7 @@ QLineEdit:focus {
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="returnButton_2">
+   <widget class="QPushButton" name="returnButton">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -347,7 +347,7 @@ background: transparent;
      <string>OlouXi</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="LogoLabel">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -369,12 +369,12 @@ background: transparent;
    </widget>
    <zorder>treeWidget_2</zorder>
    <zorder>label_8</zorder>
-   <zorder>SearchLineCat_2</zorder>
+   <zorder>SearchLineCat</zorder>
    <zorder>label_13</zorder>
-   <zorder>returnButton_2</zorder>
    <zorder>label_14</zorder>
    <zorder>label_15</zorder>
-   <zorder>label_4</zorder>
+   <zorder>LogoLabel</zorder>
+   <zorder>returnButton</zorder>
   </widget>
   <widget class="QWidget" name="animalCardWidget" native="true">
    <property name="geometry">
