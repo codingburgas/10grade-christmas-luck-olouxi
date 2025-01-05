@@ -16,36 +16,14 @@ categories::categories(QWidget *parent)
     ui->LogoLabel->setPixmap(pix);
     setWindowTitle("Info");
     ui->SearchLineCat->setPlaceholderText("Search");
-    QAction *searchAction = new QAction(QIcon(":/images/img/betterSearch.jpg"), "", this);
-    ui->SearchLineCat->addAction(searchAction, QLineEdit::LeadingPosition);
-    //QPixmap pix2(":/images/img/betterSearch.jpg");
-    //ui->searchIcon->setPixmap(pix2);
 }
-//int a = 1;
-
-/*const std::string txtWork(){
-    std::string ddd, sss;
-    std::fstream animalList("animalList.txt", std::ios::app | std::ios::in | std::ios::out | std::ios::ate);
-    animalList << "aboba";
-    while (getline(animalList, ddd)){
-        sss = ddd;
-    }
-
-    animalList.close();
-    return sss;
-
-}*/
-
-
-
-
 
 
 categories::~categories()
 {
     delete ui;
 }
-class Animal{
+class Animal{ //animal class declaration
 private:
     std::string Specie;
     std::string Nutrition;
@@ -55,49 +33,20 @@ private:
     std::string Family;
     std::string Genus;
 public:
-    void setSpecie(std::string specie){
-        Specie = specie;
-    }
-    void setNutrition(std::string nutrition){
-        Nutrition = nutrition;
-    }
-    void setPhoto(std::string photo){
-        Photo = photo;
-    }
-    void setDescription(std::string description){
-        Description = description;
-    }
-    void setAclass(std::string aclass){
-        Aclass = aclass;
-    }
-    void setFamily(std::string family){
-        Family = family;
-    }
-    void setGenus(std::string genus){
-        Genus = genus;
-    }
-
-    std::string getSpecie(){
-        return Specie;
-    }
-    std::string getNutrition(){
-        return Nutrition;
-    }
-    std::string getPhoto(){
-        return Photo;
-    }
-    std::string getDescription(){
-        return Description;
-    }
-    std::string getAclass(){
-        return Aclass;
-    }
-    std::string getFamily(){
-        return Family;
-    }
-    std::string getGenus(){
-        return Genus;
-    }
+    void setSpecie(const std::string& specie) { Specie = specie; }
+    void setNutrition(const std::string& nutrition) { Nutrition = nutrition; }
+    void setPhoto(const std::string& photo) { Photo = photo; }
+    void setDescription(const std::string& description) { Description = description; }
+    void setAclass(const std::string& aclass) { Aclass = aclass; }
+    void setFamily(const std::string& family) { Family = family; }
+    void setGenus(const std::string& genus) { Genus = genus; }
+    std::string getSpecie() const { return Specie; }
+    std::string getNutrition() const { return Nutrition; }
+    std::string getPhoto() const { return Photo; }
+    std::string getDescription() const { return Description; }
+    std::string getAclass() const { return Aclass; }
+    std::string getFamily() const { return Family; }
+    std::string getGenus() const { return Genus; }
 
     void newAnimal(Animal a){
         std::fstream file;

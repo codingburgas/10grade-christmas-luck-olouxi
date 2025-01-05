@@ -21,6 +21,8 @@ public:
 private slots:
     void on_CategoryButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *MAINW;
     categories *category;

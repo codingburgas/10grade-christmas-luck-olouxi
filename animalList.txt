@@ -1,4 +1,4 @@
-Lion;Carnivore;lion.jpg;The lion is a large, muscular cat known for its majestic mane.;Mammalia;Felidae;Panthera
+Lion    Carnivore   lion.jpg    The lion is a large, muscular cat known for its majestic mane.    Mammalia    Felidae    Panthera
 Elephant;Herbivore;elephant.jpg;Elephants are the largest land mammals, recognized for their trunks.;Mammalia;Elephantidae;Loxodonta
 Wolf;Carnivore;wolf.jpg;Wolves are social predators that live and hunt in packs.;Mammalia;Canidae;Canis
 Koala;Herbivore;koala.jpg;Koalas are arboreal marsupials that feed primarily on eucalyptus leaves.;Mammalia;Phascolarctidae;Phascolarctos

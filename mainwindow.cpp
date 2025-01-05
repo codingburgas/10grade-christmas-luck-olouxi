@@ -31,3 +31,10 @@ void MainWindow::on_CategoryButton_clicked()
     category->show();
     this->close();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    category->show();
+    this->close();
+}
+
