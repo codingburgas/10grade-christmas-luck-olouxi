@@ -24,6 +24,8 @@ private slots:
 
     void on_animalCardCloseButton_clicked();
 
+    void on_SearchLineCat_returnPressed();
+
 private:
     Ui::categories *ui;
 };

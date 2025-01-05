@@ -67,8 +67,6 @@ border-top-right-radius: 200px;
     padding: 10px; 
  
     color: #000000;
-
-
 padding: 20px;
 
 }
@@ -229,23 +227,6 @@ QTreeWidget::item:hover {
     </column>
     <item>
      <property name="text">
-      <string>Млекопитающие </string>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-       <italic>true</italic>
-       <bold>true</bold>
-       <underline>false</underline>
-       <strikeout>false</strikeout>
-       <stylestrategy>PreferAntialias</stylestrategy>
-       <kerning>true</kerning>
-       <hintingpreference>PreferFullHinting</hintingpreference>
-      </font>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>Новый элемент</string>
      </property>
      <item>
@@ -263,7 +244,7 @@ QTreeWidget::item:hover {
        </item>
        <item>
         <property name="text">
-         <string>Новый элемент</string>
+         <string>Lion</string>
         </property>
        </item>
        <item>
@@ -271,56 +252,6 @@ QTreeWidget::item:hover {
          <string>Новый элемент</string>
         </property>
        </item>
-      </item>
-      <item>
-       <property name="text">
-        <string>3.2</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>3.3</string>
-       </property>
-      </item>
-     </item>
-     <item>
-      <property name="text">
-       <string>2.2</string>
-      </property>
-      <item>
-       <property name="text">
-        <string>Новый дочерний элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
-      </item>
-     </item>
-     <item>
-      <property name="text">
-       <string>2.3</string>
-      </property>
-      <item>
-       <property name="text">
-        <string>Новый дочерний элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Новый элемент</string>
-       </property>
       </item>
      </item>
     </item>
@@ -479,7 +410,7 @@ background: transparent;
 }</string>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>close card</string>
     </property>
    </widget>
    <widget class="QLabel" name="animalInfoLabel2">
@@ -522,7 +453,7 @@ background: transparent;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="animalNutritionLabel">
     <property name="geometry">
      <rect>
       <x>-70</x>
@@ -538,10 +469,10 @@ background: transparent;
     border: none; 
     margin: 0px; 
     padding: 0px; 
-    color: rgb(238, 108, 123);
+
     text-align: center;
   qproperty-alignment: 'AlignCenter';
-  background-color: transparent;
+  
 
 }</string>
     </property>
@@ -559,7 +490,7 @@ background: transparent;
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
   </widget>

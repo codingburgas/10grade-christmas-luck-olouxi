@@ -1,7 +1,8 @@
 #include "categories.h"
 #include<fstream>
+//#include <iostream>
+#include<sstream>
 #include<cstring>
-#include<iostream>
 #include "ui_categories.h"
 //#include <thread>
 //#include <chrono>
@@ -20,11 +21,9 @@ categories::categories(QWidget *parent)
     //QPixmap pix2(":/images/img/betterSearch.jpg");
     //ui->searchIcon->setPixmap(pix2);
 }
-int a = 1;
+//int a = 1;
 
-
-
-const std::string txtWork(){
+/*const std::string txtWork(){
     std::string ddd, sss;
     std::fstream animalList("animalList.txt", std::ios::app | std::ios::in | std::ios::out | std::ios::ate);
     animalList << "aboba";
@@ -35,7 +34,7 @@ const std::string txtWork(){
     animalList.close();
     return sss;
 
-}
+}*/
 
 
 
@@ -99,11 +98,49 @@ public:
     std::string getGenus(){
         return Genus;
     }
+
+    void newAnimal(Animal a){
+        std::fstream file;
+        file.open("animalList.txt");
+        file << a.Specie << ' ' << a.Nutrition << ' ' << a.Photo << a.Description << ' ' << a.Aclass << ' ' << a.Family << ' ' << a.Genus << "\n";
+        file.close();
+    }
+
+    void setAnimalCard(const std::string& a) {
+        std::ifstream file("animalList.txt");
+        if (!file.is_open()) {
+            return;
+        }
+        std::string line;
+        while (std::getline(file, line)) {
+            std::istringstream iss(line);
+            std::string specie;
+
+            if (iss >> specie) {
+                if (specie == a) {
+                    Specie = specie;
+                    iss >> Nutrition >> Photo;
+
+                    std::string descriptionPart;
+                    while (iss >> descriptionPart) {
+                        if (!Description.empty()) {
+                            Description += " ";
+                        }
+                        Description += descriptionPart;
+                    }
+
+                    iss >> Aclass >> Family >> Genus;
+                    break;
+                }
+            }
+        }
+
+        file.close();
+    }
 };
 
 void categories::on_returnButton_clicked()
 {
-    //MAINW->MainReturn();
     this->close();
     emit MAINreturn();
 }
@@ -111,23 +148,38 @@ void categories::on_returnButton_clicked()
 
 void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
-    if(a == 1){
-        QString ITEMtext = item->text(column);
-        ui->animalNameLabel->setText(ITEMtext);
-        ui->animalCardWidget->show();
-        a++;
-    }
-    else{
-        ui->animalCardWidget->hide();
-        //std::this_thread::sleep_for(std::chrono::seconds(1));
-        QString ITEMtext = item->text(column);
-        ui->animalNameLabel->setText(ITEMtext);
-        ui->animalCardWidget->show();
-    }
-    QString ssss = QString::fromStdString(txtWork());
-    ui->animalInfoLabel1->setText(ssss);
-}
+    QString ITEMtext = item->text(column);
+    Animal actual;
+    std::string text = ITEMtext.toStdString();
+    actual.setAnimalCard(text);
 
+
+    QString ssss = QString::fromStdString(actual.getAclass());
+    ui->animalInfoLabel1->setText(ssss);
+
+    ssss = QString::fromStdString(actual.getFamily());
+    ui->animalInfoLabel2->setText(ssss);
+
+    ssss = QString::fromStdString(actual.getGenus());
+    ui->animalInfoLabel3->setText(ssss);
+
+    ssss = QString::fromStdString(actual.getSpecie());
+    ui->animalNameLabel->setText(ssss);
+
+    ssss = QString::fromStdString(actual.getDescription());
+    ui->animalDescriptionLabel->setText(ssss);
+
+    ssss = QString::fromStdString(actual.getNutrition());
+    if (ssss == "Carnivore")
+        ui->animalNutritionLabel->setStyleSheet("color: rgb(238, 108, 123);");
+    else if (ssss == "Herbivore")
+        ui->animalNutritionLabel->setStyleSheet("color: rgb(153, 255, 153);");
+    else if (ssss == "Omnivore")
+        ui->animalNutritionLabel->setStyleSheet("color: rgb(255, 255, 153);");
+
+    ui->animalCardWidget->show();
+
+}
 
 void categories::on_animalCardCloseButton_clicked()
 {
@@ -136,4 +188,10 @@ void categories::on_animalCardCloseButton_clicked()
 
 
 
+
+
+void categories::on_SearchLineCat_returnPressed()
+{
+    QString Searchtext = ui->SearchLineCat->text();
+}
 

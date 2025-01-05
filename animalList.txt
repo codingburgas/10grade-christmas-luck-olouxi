@@ -1,0 +1,14 @@
+Lion;Carnivore;lion.jpg;The lion is a large, muscular cat known for its majestic mane.;Mammalia;Felidae;Panthera
+Elephant;Herbivore;elephant.jpg;Elephants are the largest land mammals, recognized for their trunks.;Mammalia;Elephantidae;Loxodonta
+Wolf;Carnivore;wolf.jpg;Wolves are social predators that live and hunt in packs.;Mammalia;Canidae;Canis
+Koala;Herbivore;koala.jpg;Koalas are arboreal marsupials that feed primarily on eucalyptus leaves.;Mammalia;Phascolarctidae;Phascolarctos
+Tiger;Carnivore;tiger.jpg;Tigers are solitary big cats known for their striped fur.;Mammalia;Felidae;Panthera
+Giraffe;Herbivore;giraffe.jpg;Giraffes are the tallest land animals, distinguished by their long necks.;Mammalia;Giraffidae;Giraffa
+Panda;Herbivore;panda.jpg;Pandas are black-and-white bears famous for eating bamboo.;Mammalia;Ursidae;Ailuropoda
+Kangaroo;Herbivore;kangaroo.jpg;Kangaroos are marsupials known for their powerful hind legs and pouch.;Mammalia;Macropodidae;Macropus
+Horse;Herbivore;horse.jpg;Horses are strong, domesticated animals used for transportation and sport.;Mammalia;Equidae;Equus
+Fox;Omnivore;fox.jpg;Foxes are small, agile mammals with bushy tails and pointed ears.;Mammalia;Canidae;Vulpes
+Sloth;Herbivore;sloth.jpg;Sloths are slow-moving, tree-dwelling mammals found in tropical forests.;Mammalia;Bradypodidae;Bradypus
+Bear;Omnivore;bear.jpg;Bears are large mammals with thick fur, ranging from polar to tropical regions.;Mammalia;Ursidae;Ursus
+Dolphin;Carnivore;dolphin.jpg;Dolphins are intelligent marine mammals known for their playful behavior.;Mammalia;Delphinidae;Tursiops
+
