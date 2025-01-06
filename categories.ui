@@ -157,9 +157,9 @@ QPushButton:focus {
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>205</x>
       <y>200</y>
-      <width>215</width>
+      <width>220</width>
       <height>60</height>
      </rect>
     </property>
@@ -227,39 +227,64 @@ QTreeWidget::item:hover {
     </column>
     <item>
      <property name="text">
-      <string>Новый элемент</string>
+      <string>Morganucodon</string>
      </property>
      <item>
       <property name="text">
-       <string>2.1</string>
+       <string>Hesperocyon</string>
       </property>
       <item>
        <property name="text">
-        <string>3.1</string>
+        <string>Canis ramosus</string>
        </property>
-       <item>
-        <property name="text">
-         <string>Новый дочерний элемент</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Lion</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Новый элемент</string>
-        </property>
-       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Riffautae</string>
+       </property>
       </item>
      </item>
+     <item>
+      <property name="text">
+       <string>Sahelanthropus tchadensis</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Paniscus</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Habilis</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Proailurus</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Blytheae</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Silvestris</string>
+       </property>
+      </item>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>test</string>
+     </property>
     </item>
    </widget>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>205</x>
       <y>110</y>
       <width>171</width>
       <height>61</height>
@@ -310,8 +335,8 @@ background: transparent;
   <widget class="QWidget" name="animalCardWidget" native="true">
    <property name="geometry">
     <rect>
-     <x>750</x>
-     <y>130</y>
+     <x>770</x>
+     <y>191</y>
      <width>420</width>
      <height>520</height>
     </rect>
@@ -330,10 +355,10 @@ background: transparent;
    <widget class="QLabel" name="animalDescriptionLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>280</y>
-      <width>390</width>
-      <height>210</height>
+      <x>15</x>
+      <y>305</y>
+      <width>395</width>
+      <height>200</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -350,10 +375,10 @@ background: transparent;
    <widget class="QLabel" name="animalPhotoLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>50</y>
-      <width>371</width>
-      <height>181</height>
+      <x>10</x>
+      <y>45</y>
+      <width>400</width>
+      <height>225</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -370,17 +395,17 @@ background: transparent;
    <widget class="QLabel" name="animalInfoLabel1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>240</y>
-      <width>81</width>
-      <height>21</height>
+      <x>39</x>
+      <y>275</y>
+      <width>90</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
      background: #D0F4FF;
-   
-    border-radius: 20px;
+    padding 0px;
+    border-radius: 0px;
 }</string>
     </property>
     <property name="text">
@@ -416,17 +441,17 @@ background: transparent;
    <widget class="QLabel" name="animalInfoLabel2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>240</y>
-      <width>81</width>
-      <height>21</height>
+      <x>165</x>
+      <y>275</y>
+      <width>90</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
      background: #D0F4FF;
-   
-    border-radius: 20px;
+    padding 0px;
+    border-radius: 0px;
 }</string>
     </property>
     <property name="text">
@@ -436,17 +461,17 @@ background: transparent;
    <widget class="QLabel" name="animalInfoLabel3">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>240</y>
-      <width>81</width>
-      <height>21</height>
+      <x>290</x>
+      <y>275</y>
+      <width>90</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
      background: #D0F4FF;
-   
-    border-radius: 20px;
+    padding 0px;
+    border-radius: 0px;
 }</string>
     </property>
     <property name="text">
@@ -457,7 +482,7 @@ background: transparent;
     <property name="geometry">
      <rect>
       <x>-70</x>
-      <y>-130</y>
+      <y>-135</y>
       <width>221</width>
       <height>181</height>
      </rect>
@@ -469,11 +494,9 @@ background: transparent;
     border: none; 
     margin: 0px; 
     padding: 0px; 
-
+    background-color: transparent;
     text-align: center;
   qproperty-alignment: 'AlignCenter';
-  
-
 }</string>
     </property>
     <property name="text">
@@ -483,9 +506,9 @@ background: transparent;
    <widget class="QLabel" name="animalNameLabel">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>120</x>
       <y>10</y>
-      <width>91</width>
+      <width>150</width>
       <height>31</height>
      </rect>
     </property>

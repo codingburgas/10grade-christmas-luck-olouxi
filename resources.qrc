@@ -5,6 +5,12 @@
         <file>img/tree3.png</file>
         <file>img/categoriesbackground.png</file>
         <file>img/search.jpg</file>
-        <file>img/betterSearch.jpg</file>
+        <file>img/betterSearch.png</file>
+    </qresource>
+    <qresource prefix="/textfiles">
+        <file>animalList.txt</file>
+    </qresource>
+    <qresource prefix="/animalP">
+        <file>img/animals/Silvestris.png</file>
     </qresource>
 </RCC>

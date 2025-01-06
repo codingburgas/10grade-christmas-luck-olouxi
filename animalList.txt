@@ -1,14 +1,10 @@
-Lion;Carnivore;lion.jpg;The lion is a large, muscular cat known for its majestic mane.;Mammalia;Felidae;Panthera
-Elephant;Herbivore;elephant.jpg;Elephants are the largest land mammals, recognized for their trunks.;Mammalia;Elephantidae;Loxodonta
-Wolf;Carnivore;wolf.jpg;Wolves are social predators that live and hunt in packs.;Mammalia;Canidae;Canis
-Koala;Herbivore;koala.jpg;Koalas are arboreal marsupials that feed primarily on eucalyptus leaves.;Mammalia;Phascolarctidae;Phascolarctos
-Tiger;Carnivore;tiger.jpg;Tigers are solitary big cats known for their striped fur.;Mammalia;Felidae;Panthera
-Giraffe;Herbivore;giraffe.jpg;Giraffes are the tallest land animals, distinguished by their long necks.;Mammalia;Giraffidae;Giraffa
-Panda;Herbivore;panda.jpg;Pandas are black-and-white bears famous for eating bamboo.;Mammalia;Ursidae;Ailuropoda
-Kangaroo;Herbivore;kangaroo.jpg;Kangaroos are marsupials known for their powerful hind legs and pouch.;Mammalia;Macropodidae;Macropus
-Horse;Herbivore;horse.jpg;Horses are strong, domesticated animals used for transportation and sport.;Mammalia;Equidae;Equus
-Fox;Omnivore;fox.jpg;Foxes are small, agile mammals with bushy tails and pointed ears.;Mammalia;Canidae;Vulpes
-Sloth;Herbivore;sloth.jpg;Sloths are slow-moving, tree-dwelling mammals found in tropical forests.;Mammalia;Bradypodidae;Bradypus
-Bear;Omnivore;bear.jpg;Bears are large mammals with thick fur, ranging from polar to tropical regions.;Mammalia;Ursidae;Ursus
-Dolphin;Carnivore;dolphin.jpg;Dolphins are intelligent marine mammals known for their playful behavior.;Mammalia;Delphinidae;Tursiops
-
+Morganucodon;Omnivore;image.png;An early mammaliaform, Morganucodon lived around \n 200 million years ago.;Mammalia;N/A;Morganucodon
+Hesperocyon;Carnivore;image.png;An extinct genus considered the earliest member of the Canidae family.;Mammalia;Canidae;Hesperocyon
+Canis ramosus;Carnivore;image.png;An extinct species within the genus Canis, related to modern wolves.;Mammalia;Canidae;Canis
+Riffautae;Carnivore;image.png;An extinct fox species from the genus Vulpes.;Mammalia;Canidae;Vulpes
+Sahelanthropus tchadensis;Omnivore;image.png;An extinct hominid species, possibly an early human ancestor.;Mammalia;Hominidae;Sahelanthropus
+Paniscus;Omnivore;image.png;Also known as the bonobo, it is a species of the Pan genus.;Mammalia;Hominidae;Pan
+Habilis;Omnivore;image.png;An early human ancestor known for its use of tools.;Mammalia;Hominidae;Homo
+Proailurus;Carnivore;image.png;An extinct genus, considered the earliest feliform carnivoran.;Mammalia;Felidae;Proailurus
+Blytheae;Carnivore;image.png;An extinct species of the genus Panthera, related to modern big cats.;Mammalia;Felidae;Panthera
+Silvestris;Carnivore;:/animalP/img/animals/Silvestris.png;The wildcat, native to Europe, Africa, and Asia.;Mammalia;Felidae;Felis
