@@ -295,7 +295,7 @@ public:
 "}"));
         animalNameLabel = new QLabel(animalCardWidget);
         animalNameLabel->setObjectName("animalNameLabel");
-        animalNameLabel->setGeometry(QRect(125, 10, 150, 31));
+        animalNameLabel->setGeometry(QRect(125, 10, 140, 31));
 
         retranslateUi(categories);
 

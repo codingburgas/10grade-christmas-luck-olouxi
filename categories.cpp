@@ -28,10 +28,6 @@ categories::categories(QWidget *parent)
     setWindowTitle("Info");
     ui->SearchLineCat->setPlaceholderText("Search");
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> d27843e1c5b98a03a92c045d7f45003081edd8ed
 
 categories::~categories()
 {
@@ -61,16 +57,8 @@ public:
     std::string getAclass() const { return Aclass; }
     std::string getFamily() const { return Family; }
     std::string getGenus() const { return Genus; }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> f73048da68a2e5d919ba6eeac30850fd7004b299
     void newAnimal(Animal a){ //function to add new animal class object
-=======
-
-    void newAnimal(Animal a){
->>>>>>> d27843e1c5b98a03a92c045d7f45003081edd8ed
         std::fstream file;
         file.open("animalList.txt");
         file << a.Specie << ';' << a.Nutrition << ';' << a.Photo << ';' << a.Description << ';' << a.Aclass << ';' << a.Family << ';' << a.Genus << "\n";
@@ -98,7 +86,6 @@ public:
             std::stringstream ss(line);
             std::string specie, nutrition, photo, description, aclass, family, genus;
 
-
             std::getline(ss, specie, ';');
             std::getline(ss, nutrition, ';');
             std::getline(ss, photo, ';');
@@ -106,7 +93,6 @@ public:
             std::getline(ss, aclass, ';');
             std::getline(ss, family, ';');
             std::getline(ss, genus, ';');
-
 
             if (specie == targetSpecie) {
                 animal.setSpecie(specie);
@@ -128,7 +114,6 @@ void categories::on_returnButton_clicked()
     this->close();
     emit MAINreturn();
 }
-
 
 void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
@@ -176,7 +161,6 @@ void categories::on_animalCardCloseButton_clicked()
 {
     ui->animalCardWidget->hide();
 }
-
 
 void categories::on_SearchLineCat_returnPressed()
 {
