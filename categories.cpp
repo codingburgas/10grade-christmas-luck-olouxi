@@ -28,6 +28,10 @@ categories::categories(QWidget *parent)
     setWindowTitle("Info");
     ui->SearchLineCat->setPlaceholderText("Search");
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d27843e1c5b98a03a92c045d7f45003081edd8ed
 
 categories::~categories()
 {
@@ -57,7 +61,12 @@ public:
     std::string getAclass() const { return Aclass; }
     std::string getFamily() const { return Family; }
     std::string getGenus() const { return Genus; }
+<<<<<<< HEAD
     void newAnimal(Animal a){ //function to add new animal class object
+=======
+
+    void newAnimal(Animal a){
+>>>>>>> d27843e1c5b98a03a92c045d7f45003081edd8ed
         std::fstream file;
         file.open("animalList.txt");
         file << a.Specie << ';' << a.Nutrition << ';' << a.Photo << ';' << a.Description << ';' << a.Aclass << ';' << a.Family << ';' << a.Genus << "\n";
