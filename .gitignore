@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+release/
 build/
 debug/
 release/
@@ -15,6 +16,11 @@ release/
 # Precompiled Headers
 *.gch
 *.pch
+
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release
 
 # Compiled Dynamic libraries
 *.so

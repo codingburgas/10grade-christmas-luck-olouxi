@@ -11,11 +11,11 @@
 #include <QTextStream>
 #include <QStringList>
 #include <QDebug>
-//#include <QVBoxLayout>
-//#include <QLabel>
-//#include <QWidget>
-//#include <QApplication>
-//#include <QListWidget>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QWidget>
+#include <QApplication>
+#include <QListWidget>
 
 categories::categories(QWidget *parent)
     : QDialog(parent)
@@ -153,6 +153,9 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
         ui->animalInfoLabel3->setText(ssss);
 
         ui->animalCardWidget->show();
+    }
+    else{
+        close();
     }
 }
 
