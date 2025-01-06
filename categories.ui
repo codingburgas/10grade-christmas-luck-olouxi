@@ -506,7 +506,7 @@ background: transparent;
    <widget class="QLabel" name="animalNameLabel">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>125</x>
       <y>10</y>
       <width>150</width>
       <height>31</height>

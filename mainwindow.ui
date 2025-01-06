@@ -274,7 +274,7 @@ QPushButton:focus {
 </string>
      </property>
      <property name="text">
-      <string>Welcome to &quot;Evolutionary Tree Visualizer&quot;!
+      <string>     Welcome to &quot;Evolutionary Tree Visualizer&quot;!
 </string>
      </property>
     </widget>
@@ -283,7 +283,7 @@ QPushButton:focus {
       <rect>
        <x>337</x>
        <y>120</y>
-       <width>321</width>
+       <width>241</width>
        <height>51</height>
       </rect>
      </property>
@@ -292,6 +292,7 @@ QPushButton:focus {
     font-family: &quot;Times new Roman&quot;; 
     font-size: 50px;
     padding: 1px;
+    background: transparent;
 }
 </string>
      </property>
@@ -337,7 +338,7 @@ QPushButton:focus {
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>-20</x>
+      <x>3</x>
       <y>200</y>
       <width>691</width>
       <height>491</height>

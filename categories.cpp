@@ -11,11 +11,11 @@
 #include <QTextStream>
 #include <QStringList>
 #include <QDebug>
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QWidget>
-#include <QApplication>
-#include <QListWidget>
+//#include <QVBoxLayout>
+//#include <QLabel>
+//#include <QWidget>
+//#include <QApplication>
+//#include <QListWidget>
 
 categories::categories(QWidget *parent)
     : QDialog(parent)
@@ -57,6 +57,7 @@ public:
     std::string getAclass() const { return Aclass; }
     std::string getFamily() const { return Family; }
     std::string getGenus() const { return Genus; }
+
     void newAnimal(Animal a){ //function to add new animal class object
         std::fstream file;
         file.open("animalList.txt");
