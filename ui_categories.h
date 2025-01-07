@@ -169,6 +169,7 @@ public:
         new QTreeWidgetItem(__qtreewidgetitem4);
         treeWidget_2->setObjectName("treeWidget_2");
         treeWidget_2->setGeometry(QRect(20, 280, 531, 511));
+        treeWidget_2->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CursorShape::ClosedHandCursor)));
         treeWidget_2->setStyleSheet(QString::fromUtf8("QTreeWidget {\n"
 "    background-color: #f5f5f5; /* Light gray background */\n"
 "    border: 1px solid #dcdcdc; /* Subtle border */\n"
@@ -189,7 +190,7 @@ public:
 "}"));
         label_15 = new QLabel(widget);
         label_15->setObjectName("label_15");
-        label_15->setGeometry(QRect(205, 110, 171, 61));
+        label_15->setGeometry(QRect(245, 110, 171, 61));
         label_15->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: \"Times new Roman\"; \n"
 "    font-size: 50px;\n"

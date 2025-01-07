@@ -1,4 +1,4 @@
-Morganucodon;Omnivore;:/animalP/img/animals/Morganucodon.png;An early mammaliaform, Morganucodon lived around \n 200 million years ago.;Mammalia;N/A;Morganucodon
+Morganucodon;Omnivore;:/animalP/img/animals/Morganucodon.png;An early mammaliaform, Morganucodon lived around 200 million years <br> ago.;Mammalia;N/A;Morganucodon
 Hesperocyon;Carnivore;:/animalP/img/animals/Hesperocyon.png;An extinct genus considered the earliest member of the Canidae family.;Mammalia;Canidae;Hesperocyon
 Edwardii;Carnivore;:/animalP/img/animals/Edwardii.png;An extinct species within the genus Canis, related to modern wolves.;Mammalia;Canidae;Canis
 Riffautae;Carnivore;:/animalP/img/animals/Vulpes.png;An extinct fox species from the genus Vulpes.;Mammalia;Canidae;Vulpes

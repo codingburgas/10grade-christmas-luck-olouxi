@@ -17,8 +17,8 @@ categories::categories(QWidget *parent)
     , ui(new Ui::categories)
 {
     ui->setupUi(this);
-    ui->animalCardWidget->hide();
-    QPixmap pix(":/images/img/logo.png");
+    ui->animalCardWidget->hide(); //hide animal card
+    QPixmap pix(":/images/img/logo.png"); //add logo on the page
     ui->LogoLabel->setPixmap(pix);
     setWindowTitle("Info");
     ui->SearchLineCat->setPlaceholderText("Search");
@@ -60,7 +60,7 @@ public:
         file.close();
     }*/
 
-    Animal findAnimalBySpecie(const std::string& targetSpecie) {
+    Animal findAnimalBySpecie(const std::string& targetSpecie) { //function for taking info from animalList.txt
         const std::string filename = "animalList.txt";
         std::ifstream file(filename);
         Animal animal;
@@ -126,7 +126,7 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
         else if (ssss == "Herbivore")
             ui->animalNutritionLabel->setStyleSheet("color: rgb(153, 255, 153); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
         else if (ssss == "Omnivore")
-            ui->animalNutritionLabel->setStyleSheet("color: rgb(255, 255, 153); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
+            ui->animalNutritionLabel->setStyleSheet("color: rgb(255, 255, 60); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
         else
             ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
 
