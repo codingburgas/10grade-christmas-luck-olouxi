@@ -38,7 +38,7 @@ private:
     std::string Family;
     std::string Genus;
 public:
-    void setSpecie(const std::string& specie) { Specie = specie; }
+    void setSpecie(const std::string& specie) { Specie = specie; } // setters&getters
     void setNutrition(const std::string& nutrition) { Nutrition = nutrition; }
     void setPhoto(const std::string& photo) { Photo = photo; }
     void setDescription(const std::string& description) { Description = description; }
@@ -53,12 +53,12 @@ public:
     std::string getFamily() const { return Family; }
     std::string getGenus() const { return Genus; }
 
-    void newAnimal(Animal a){ //function to add new animal class object
+    /*void newAnimal(Animal a){ //function to add new animal class object
         std::fstream file;
         file.open("animalList.txt");
         file << a.Specie << ';' << a.Nutrition << ';' << a.Photo << ';' << a.Description << ';' << a.Aclass << ';' << a.Family << ';' << a.Genus << "\n";
         file.close();
-    }
+    }*/
 
     Animal findAnimalBySpecie(const std::string& targetSpecie) {
         const std::string filename = "animalList.txt";
@@ -150,9 +150,6 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
 
         ui->animalCardWidget->show();
     }
-    else{
-        close();
-    }
 }
 
 void categories::on_animalCardCloseButton_clicked()
@@ -178,8 +175,10 @@ void categories::on_SearchLineCat_returnPressed()
     else
         ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
 
-    ssss = QString::fromStdString(actual.getPhoto());
-    ui->animalPhotoLabel->setText(ssss);
+    std::string a = actual.getPhoto();
+    ssss = QString::fromStdString(a);
+    QPixmap pix2(ssss);
+    ui->animalPhotoLabel->setPixmap(pix2);
 
     ssss = QString::fromStdString(actual.getDescription());
     ui->animalDescriptionLabel->setText(ssss);

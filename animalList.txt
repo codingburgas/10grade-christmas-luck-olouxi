@@ -1,10 +1,10 @@
-Morganucodon;Omnivore;image.png;An early mammaliaform, Morganucodon lived around \n 200 million years ago.;Mammalia;N/A;Morganucodon
-Hesperocyon;Carnivore;image.png;An extinct genus considered the earliest member of the Canidae family.;Mammalia;Canidae;Hesperocyon
-Canis ramosus;Carnivore;image.png;An extinct species within the genus Canis, related to modern wolves.;Mammalia;Canidae;Canis
-Riffautae;Carnivore;image.png;An extinct fox species from the genus Vulpes.;Mammalia;Canidae;Vulpes
-Sahelanthropus tchadensis;Omnivore;image.png;An extinct hominid species, possibly an early human ancestor.;Mammalia;Hominidae;Sahelanthropus
-Paniscus;Omnivore;image.png;Also known as the bonobo, it is a species of the Pan genus.;Mammalia;Hominidae;Pan
-Habilis;Omnivore;image.png;An early human ancestor known for its use of tools.;Mammalia;Hominidae;Homo
-Proailurus;Carnivore;image.png;An extinct genus, considered the earliest feliform carnivoran.;Mammalia;Felidae;Proailurus
-Blytheae;Carnivore;image.png;An extinct species of the genus Panthera, related to modern big cats.;Mammalia;Felidae;Panthera
+Morganucodon;Omnivore;:/animalP/img/animals/Morganucodon.png;An early mammaliaform, Morganucodon lived around \n 200 million years ago.;Mammalia;N/A;Morganucodon
+Hesperocyon;Carnivore;:/animalP/img/animals/Hesperocyon.png;An extinct genus considered the earliest member of the Canidae family.;Mammalia;Canidae;Hesperocyon
+Edwardii;Carnivore;:/animalP/img/animals/Edwardii.png;An extinct species within the genus Canis, related to modern wolves.;Mammalia;Canidae;Canis
+Riffautae;Carnivore;:/animalP/img/animals/Vulpes.png;An extinct fox species from the genus Vulpes.;Mammalia;Canidae;Vulpes
+Sahelanthropus tchadensis;Omnivore;:/animalP/img/animals/Sahelanthropus_tchadensis.png;An extinct hominid species, possibly an early human ancestor.;Mammalia;Hominidae;Sahelanthropus
+Paniscus;Omnivore;:/animalP/img/animals/Paniscus.png;Also known as the bonobo, it is a species of the Pan genus.;Mammalia;Hominidae;Pan
+Habilis;Omnivore;:/animalP/img/animals/Habilis.png;An early human ancestor known for its use of tools.;Mammalia;Hominidae;Homo
+Proailurus;Carnivore;:/animalP/img/animals/Proailurus.png;An extinct genus, considered the earliest feliform carnivoran.;Mammalia;Felidae;Proailurus
+Blytheae;Carnivore;:/animalP/img/animals/Blytheae.png;An extinct species of the genus Panthera, related to modern big cats.;Mammalia;Felidae;Panthera
 Silvestris;Carnivore;:/animalP/img/animals/Silvestris.png;The wildcat, native to Europe, Africa, and Asia.;Mammalia;Felidae;Felis

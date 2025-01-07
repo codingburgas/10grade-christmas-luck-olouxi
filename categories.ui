@@ -235,7 +235,7 @@ QTreeWidget::item:hover {
       </property>
       <item>
        <property name="text">
-        <string>Canis ramosus</string>
+        <string>Edwardii</string>
        </property>
       </item>
       <item>
@@ -302,7 +302,7 @@ background: transparent;
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>660</y>
+      <y>635</y>
       <width>271</width>
       <height>241</height>
      </rect>

@@ -12,5 +12,14 @@
     </qresource>
     <qresource prefix="/animalP">
         <file>img/animals/Silvestris.png</file>
+        <file>img/animals/Blytheae.png</file>
+        <file>img/animals/Proailurus.png</file>
+        <file>img/animals/Habilis.png</file>
+        <file>img/animals/Paniscus.png</file>
+        <file>img/animals/Sahelanthropus_tchadensis.png</file>
+        <file>img/animals/Vulpes.png</file>
+        <file>img/animals/Edwardii.png</file>
+        <file>img/animals/Hesperocyon.png</file>
+        <file>img/animals/Morganucodon.png</file>
     </qresource>
 </RCC>

@@ -199,7 +199,7 @@ public:
 ""));
         LogoLabel = new QLabel(widget);
         LogoLabel->setObjectName("LogoLabel");
-        LogoLabel->setGeometry(QRect(520, 660, 271, 241));
+        LogoLabel->setGeometry(QRect(520, 635, 271, 241));
         LogoLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    border: none;\n"
 "    background: transparent; \n"
@@ -318,7 +318,7 @@ public:
         QTreeWidgetItem *___qtreewidgetitem2 = ___qtreewidgetitem1->child(0);
         ___qtreewidgetitem2->setText(0, QCoreApplication::translate("categories", "Hesperocyon", nullptr));
         QTreeWidgetItem *___qtreewidgetitem3 = ___qtreewidgetitem2->child(0);
-        ___qtreewidgetitem3->setText(0, QCoreApplication::translate("categories", "Canis ramosus", nullptr));
+        ___qtreewidgetitem3->setText(0, QCoreApplication::translate("categories", "Edwardii", nullptr));
         QTreeWidgetItem *___qtreewidgetitem4 = ___qtreewidgetitem2->child(1);
         ___qtreewidgetitem4->setText(0, QCoreApplication::translate("categories", "Riffautae", nullptr));
         QTreeWidgetItem *___qtreewidgetitem5 = ___qtreewidgetitem1->child(1);
