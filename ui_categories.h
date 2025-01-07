@@ -167,7 +167,6 @@ public:
         QTreeWidgetItem *__qtreewidgetitem4 = new QTreeWidgetItem(__qtreewidgetitem1);
         new QTreeWidgetItem(__qtreewidgetitem4);
         new QTreeWidgetItem(__qtreewidgetitem4);
-        new QTreeWidgetItem(treeWidget_2);
         treeWidget_2->setObjectName("treeWidget_2");
         treeWidget_2->setGeometry(QRect(20, 280, 531, 511));
         treeWidget_2->setStyleSheet(QString::fromUtf8("QTreeWidget {\n"
@@ -240,7 +239,7 @@ public:
         animalPhotoLabel->setStyleSheet(QString::fromUtf8("QWidget{\n"
 "    background: #D0F4FF;\n"
 "    border: 2px solid #006060;\n"
-"    border-radius: 20px;\n"
+"    border-radius: 0px;\n"
 "}"));
         animalInfoLabel1 = new QLabel(animalCardWidget);
         animalInfoLabel1->setObjectName("animalInfoLabel1");
@@ -334,8 +333,6 @@ public:
         ___qtreewidgetitem9->setText(0, QCoreApplication::translate("categories", "Blytheae", nullptr));
         QTreeWidgetItem *___qtreewidgetitem10 = ___qtreewidgetitem8->child(1);
         ___qtreewidgetitem10->setText(0, QCoreApplication::translate("categories", "Silvestris", nullptr));
-        QTreeWidgetItem *___qtreewidgetitem11 = treeWidget_2->topLevelItem(1);
-        ___qtreewidgetitem11->setText(0, QCoreApplication::translate("categories", "test", nullptr));
         treeWidget_2->setSortingEnabled(__sortingEnabled);
 
         label_15->setText(QCoreApplication::translate("categories", "OlouXi", nullptr));

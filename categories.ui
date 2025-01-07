@@ -275,11 +275,6 @@ QTreeWidget::item:hover {
       </item>
      </item>
     </item>
-    <item>
-     <property name="text">
-      <string>test</string>
-     </property>
-    </item>
    </widget>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
@@ -385,7 +380,7 @@ background: transparent;
      <string notr="true">QWidget{
     background: #D0F4FF;
     border: 2px solid #006060;
-    border-radius: 20px;
+    border-radius: 0px;
 }</string>
     </property>
     <property name="text">

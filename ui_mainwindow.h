@@ -200,12 +200,11 @@ public:
 ""));
         label_9 = new QLabel(widget);
         label_9->setObjectName("label_9");
-        label_9->setGeometry(QRect(337, 120, 241, 51));
+        label_9->setGeometry(QRect(337, 120, 321, 51));
         label_9->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: \"Times new Roman\"; \n"
 "    font-size: 50px;\n"
 "    padding: 1px;\n"
-"    background: transparent;\n"
 "}\n"
 ""));
         label_2->raise();
@@ -232,7 +231,7 @@ public:
 ""));
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(3, 200, 691, 491));
+        label_4->setGeometry(QRect(-20, 200, 691, 491));
         label_4->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    border: none; /*delete border */\n"
 "    background: transparent; /* delete background*/\n"
@@ -265,7 +264,7 @@ public:
         CategoryButton->setText(QCoreApplication::translate("MainWindow", "Pick a category", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Main page", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "     Welcome to \"Evolutionary Tree Visualizer\"!\n"
+        label_8->setText(QCoreApplication::translate("MainWindow", "Welcome to \"Evolutionary Tree Visualizer\"!\n"
 "", nullptr));
         label_9->setText(QCoreApplication::translate("MainWindow", "OlouXi", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "_VISUALIZER_", nullptr));

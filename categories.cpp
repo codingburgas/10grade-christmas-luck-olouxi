@@ -11,11 +11,6 @@
 #include <QTextStream>
 #include <QStringList>
 #include <QDebug>
-//#include <QVBoxLayout>
-//#include <QLabel>
-//#include <QWidget>
-//#include <QApplication>
-//#include <QListWidget>
 
 categories::categories(QWidget *parent)
     : QDialog(parent)
@@ -135,8 +130,11 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
         else
             ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
 
-        ssss = QString::fromStdString(actual.getPhoto());
-        ui->animalPhotoLabel->setText(ssss);
+        std::string a = actual.getPhoto();
+        ssss = QString::fromStdString(a);
+        QPixmap pix2(ssss);
+        ui->animalPhotoLabel->setPixmap(pix2);
+
 
         ssss = QString::fromStdString(actual.getDescription());
         ui->animalDescriptionLabel->setText(ssss);
