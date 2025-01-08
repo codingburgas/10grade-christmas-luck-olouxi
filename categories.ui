@@ -115,8 +115,7 @@ QLineEdit:focus {
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel {
-    border: none; /* Убирает границу */
-    background: transparent; /* Убирает фон (если требуется) */
+   font-size: 40 px;
 }
 </string>
     </property>
@@ -353,10 +352,10 @@ background: transparent;
    <widget class="QLabel" name="animalDescriptionLabel">
     <property name="geometry">
      <rect>
-      <x>15</x>
+      <x>9</x>
       <y>305</y>
-      <width>395</width>
-      <height>200</height>
+      <width>401</width>
+      <height>208</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -404,6 +403,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -413,9 +414,9 @@ background: transparent;
    <widget class="QPushButton" name="animalCardCloseButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>322</x>
       <y>10</y>
-      <width>93</width>
+      <width>81</width>
       <height>29</height>
      </rect>
     </property>
@@ -423,13 +424,14 @@ background: transparent;
      <string notr="true">QPushButton {
     background: qlineargradient(
         x1: 0, y1: 0, x2: 1, y2: 0,
-        stop: 0 #EFFFFF,
+        stop: 0 #9DABDA,
         stop: 1 #B0E0E6
     );
-    color: #004080;
+     color: rgb(24, 63, 78);
     border: 1px solid #004080;
     border-radius: 5px;
     padding: 5px;
+	font: 9pt &quot;Mongolian Baiti&quot;;
 }</string>
     </property>
     <property name="text">
@@ -450,6 +452,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -470,6 +474,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -504,11 +510,21 @@ background: transparent;
    <widget class="QLabel" name="animalNameLabel">
     <property name="geometry">
      <rect>
-      <x>125</x>
+      <x>120</x>
       <y>10</y>
-      <width>140</width>
+      <width>181</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background: #C3E7F2;
+
+font: 12pt &quot;Mongolian Baiti&quot;;
+ color: rgb(24, 63, 78);
+ border-radius: 5px;
+qproperty-alignment: 'AlignCenter';
+}</string>
     </property>
     <property name="text">
      <string/>
