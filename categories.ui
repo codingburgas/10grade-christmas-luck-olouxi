@@ -115,8 +115,7 @@ QLineEdit:focus {
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel {
-    border: none; /* Убирает границу */
-    background: transparent; /* Убирает фон (если требуется) */
+   font-size: 40 px;
 }
 </string>
     </property>
@@ -404,6 +403,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -451,6 +452,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -471,6 +474,8 @@ background: transparent;
      background: #D0F4FF;
     padding 0px;
     border-radius: 0px;
+qproperty-alignment: 'AlignCenter';
+ color: rgb(24, 63, 78);
 }</string>
     </property>
     <property name="text">
@@ -513,7 +518,13 @@ background: transparent;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background: #C3E7F2;}</string>
+background: #C3E7F2;
+
+font: 12pt &quot;Mongolian Baiti&quot;;
+ color: rgb(24, 63, 78);
+ border-radius: 5px;
+qproperty-alignment: 'AlignCenter';
+}</string>
     </property>
     <property name="text">
      <string/>
