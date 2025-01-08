@@ -5,7 +5,6 @@
 #include <QLineEdit>
 #include <QIcon>
 #include <QWidget>
-#include <QVBoxLayout>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , MAINW(new Ui::MainWindow)
@@ -15,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(category, &categories::MAINreturn, this, &MainWindow::show);
     setWindowTitle("Main page");
 
-    QPixmap pix(":/images/img/logo.png");
+    QPixmap pix(":/images/img/logo.png");//set photos
     MAINW->label_3->setPixmap(pix);
     QPixmap pix2(":/images/img/tree3.png");
     MAINW->label_4->setPixmap(pix2);
@@ -26,15 +25,14 @@ MainWindow::~MainWindow()
     delete MAINW;
 }
 
-void MainWindow::on_CategoryButton_clicked()
+void MainWindow::on_CategoryButton_clicked()// go to Evolutionary Tree
 {
     category->show();
     this->close();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_clicked()// go to Evolutionary Tree
 {
     category->show();
     this->close();
 }
-
