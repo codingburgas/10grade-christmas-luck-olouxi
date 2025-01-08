@@ -362,7 +362,9 @@ background: transparent;
      <string notr="true">QWidget{
     background: #D0F4FF;
     border: 2px solid #006060;
-    border-radius: 20px;
+   
+font: 12pt &quot;Mongolian Baiti&quot;;
+padding: 30px;
 }</string>
     </property>
     <property name="text">
@@ -400,7 +402,7 @@ background: transparent;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-     background: #D0F4FF;
+     background: #B2D2D2;
     padding 0px;
     border-radius: 0px;
 qproperty-alignment: 'AlignCenter';
@@ -449,7 +451,7 @@ qproperty-alignment: 'AlignCenter';
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-     background: #D0F4FF;
+     background: #B2D2D2;
     padding 0px;
     border-radius: 0px;
 qproperty-alignment: 'AlignCenter';
@@ -471,7 +473,7 @@ qproperty-alignment: 'AlignCenter';
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-     background: #D0F4FF;
+     background: #B2D2D2;
     padding 0px;
     border-radius: 0px;
 qproperty-alignment: 'AlignCenter';
