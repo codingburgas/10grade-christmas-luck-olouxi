@@ -1,15 +1,8 @@
 #include "categories.h"
 #include<fstream>
-#include<sstream>
 #include<cstring>
 #include "ui_categories.h"
 #include <QFile>
-#include <QTextStream>
-#include <QStringList>
-#include <QDebug>
-#include <QFile>
-#include <QTextStream>
-#include <QStringList>
 #include <QDebug>
 
 categories::categories(QWidget *parent)
@@ -20,7 +13,7 @@ categories::categories(QWidget *parent)
     ui->animalCardWidget->hide(); //hide animal card
     QPixmap pix(":/images/img/logo.png"); //add logo on the page
     ui->LogoLabel->setPixmap(pix);
-    setWindowTitle("Info");
+    setWindowTitle("Evolutionary Tree");
     ui->SearchLineCat->setPlaceholderText("Search");
 }
 
@@ -28,7 +21,7 @@ categories::~categories()
 {
     delete ui;
 }
-class Animal{ //animal class declaration
+struct Animal{ //animal structure declaration
 private:
     std::string Specie;
     std::string Nutrition;
@@ -53,17 +46,10 @@ public:
     std::string getFamily() const { return Family; }
     std::string getGenus() const { return Genus; }
 
-    /*void newAnimal(Animal a){ //function to add new animal class object
-        std::fstream file;
-        file.open("animalList.txt");
-        file << a.Specie << ';' << a.Nutrition << ';' << a.Photo << ';' << a.Description << ';' << a.Aclass << ';' << a.Family << ';' << a.Genus << "\n";
-        file.close();
-    }*/
-
     Animal findAnimalBySpecie(const std::string& targetSpecie) { //function for taking info from animalList.txt
         const std::string filename = "animalList.txt";
         std::ifstream file(filename);
-        Animal animal;
+        Animal animal; //empty animal
         animal.Specie = "no info";
         animal.Nutrition="nutrition";
         animal.Photo = "photo";
@@ -77,7 +63,7 @@ public:
         }
 
         std::string line;
-        while (std::getline(file, line)) {
+        while (std::getline(file, line)) { //cut line with information about animal
             std::stringstream ss(line);
             std::string specie, nutrition, photo, description, aclass, family, genus;
 
@@ -89,7 +75,7 @@ public:
             std::getline(ss, family, ';');
             std::getline(ss, genus, ';');
 
-            if (specie == targetSpecie) {
+            if (specie == targetSpecie) { // if animal exists
                 animal.setSpecie(specie);
                 animal.setNutrition(nutrition);
                 animal.setPhoto(photo);
@@ -104,19 +90,15 @@ public:
     }
 };
 
-void categories::on_returnButton_clicked()
+void categories::on_returnButton_clicked() // function to return to the main window
 {
     this->close();
     emit MAINreturn();
 }
 
-void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)
-{
-    QString ITEMtext = item->text(column);
-    std::string text = ITEMtext.toStdString();
+void categories::ChangeCard(std::string text){ // function to change animal card
     Animal actual;
     actual = actual.findAnimalBySpecie(text);
-
     if(actual.getSpecie() != "no info"){
         QString ssss = QString::fromStdString(actual.getSpecie());
         ui->animalNameLabel->setText(ssss);
@@ -126,7 +108,7 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
         else if (ssss == "Herbivore")
             ui->animalNutritionLabel->setStyleSheet("color: rgb(153, 255, 153); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
         else if (ssss == "Omnivore")
-            ui->animalNutritionLabel->setStyleSheet("color: rgb(255, 255, 60); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
+            ui->animalNutritionLabel->setStyleSheet("color: rgb(250, 231, 156); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
         else
             ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
 
@@ -152,45 +134,21 @@ void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int co
     }
 }
 
-void categories::on_animalCardCloseButton_clicked()
-{
-    ui->animalCardWidget->hide();
-}
-
-void categories::on_SearchLineCat_returnPressed()
+void categories::on_SearchLineCat_returnPressed() //receives information from search line
 {
     QString Searchtext = ui->SearchLineCat->text();
     std::string text = Searchtext.toStdString();
-    Animal actual;
-    actual = actual.findAnimalBySpecie(text);
-    QString ssss = QString::fromStdString(actual.getSpecie());
-    ui->animalNameLabel->setText(ssss);
-    ssss = QString::fromStdString(actual.getNutrition());
-    if (ssss == "Carnivore")
-        ui->animalNutritionLabel->setStyleSheet("color: rgb(238, 108, 123); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
-    else if (ssss == "Herbivore")
-        ui->animalNutritionLabel->setStyleSheet("color: rgb(153, 255, 153); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
-    else if (ssss == "Omnivore")
-        ui->animalNutritionLabel->setStyleSheet("color: rgb(255, 255, 153); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
-    else
-        ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
+    categories::ChangeCard(text);
+}
 
-    std::string a = actual.getPhoto();
-    ssss = QString::fromStdString(a);
-    QPixmap pix2(ssss);
-    ui->animalPhotoLabel->setPixmap(pix2);
+void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)//receives information from tree widget
+{
+    QString ITEMtext = item->text(column);
+    std::string text = ITEMtext.toStdString();
+    categories::ChangeCard(text);
+}
 
-    ssss = QString::fromStdString(actual.getDescription());
-    ui->animalDescriptionLabel->setText(ssss);
-
-    ssss = QString::fromStdString(actual.getAclass());
-    ui->animalInfoLabel1->setText(ssss);
-
-    ssss = QString::fromStdString(actual.getFamily());
-    ui->animalInfoLabel2->setText(ssss);
-
-    ssss = QString::fromStdString(actual.getGenus());
-    ui->animalInfoLabel3->setText(ssss);
-
-    ui->animalCardWidget->show();
+void categories::on_animalCardCloseButton_clicked()//function to close animal card
+{
+    ui->animalCardWidget->hide();
 }
