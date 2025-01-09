@@ -4,7 +4,7 @@
 #include "ui_categories.h"
 #include <QFile>
 #include <QDebug>
-
+using namespace std;
 categories::categories(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::categories)
@@ -23,32 +23,32 @@ categories::~categories()
 }
 struct Animal{ //animal structure declaration
 private:
-    std::string Specie;
-    std::string Nutrition;
-    std::string Photo;
-    std::string Description;
-    std::string Aclass;
-    std::string Family;
-    std::string Genus;
+    string Specie;
+    string Nutrition;
+    string Photo;
+    string Description;
+    string Aclass;
+    string Family;
+    string Genus;
 public:
-    void setSpecie(const std::string& specie) { Specie = specie; } // setters&getters
-    void setNutrition(const std::string& nutrition) { Nutrition = nutrition; }
-    void setPhoto(const std::string& photo) { Photo = photo; }
-    void setDescription(const std::string& description) { Description = description; }
-    void setAclass(const std::string& aclass) { Aclass = aclass; }
-    void setFamily(const std::string& family) { Family = family; }
-    void setGenus(const std::string& genus) { Genus = genus; }
-    std::string getSpecie() const { return Specie; }
-    std::string getNutrition() const { return Nutrition; }
-    std::string getPhoto() const { return Photo; }
-    std::string getDescription() const { return Description; }
-    std::string getAclass() const { return Aclass; }
-    std::string getFamily() const { return Family; }
-    std::string getGenus() const { return Genus; }
+    void setSpecie(const string& specie) { Specie = specie; } // setters&getters
+    void setNutrition(const string& nutrition) { Nutrition = nutrition; }
+    void setPhoto(const string& photo) { Photo = photo; }
+    void setDescription(const string& description) { Description = description; }
+    void setAclass(const string& aclass) { Aclass = aclass; }
+    void setFamily(const string& family) { Family = family; }
+    void setGenus(const string& genus) { Genus = genus; }
+    string getSpecie() const { return Specie; }
+    string getNutrition() const { return Nutrition; }
+    string getPhoto() const { return Photo; }
+    string getDescription() const { return Description; }
+    string getAclass() const { return Aclass; }
+    string getFamily() const { return Family; }
+    string getGenus() const { return Genus; }
 
-    Animal findAnimalBySpecie(const std::string& targetSpecie) { //function for taking info from animalList.txt
-        const std::string filename = "animalList.txt";
-        std::ifstream file(filename);
+    Animal findAnimalBySpecie(const string& targetSpecie) { //function for taking info from animalList.txt
+        const string filename = "animalList.txt";
+        ifstream file(filename);
         Animal animal; //empty animal
         animal.Specie = "no info";
         animal.Nutrition="nutrition";
@@ -58,22 +58,22 @@ public:
         animal.Family = "family";
         animal.Genus = "genus";
         if (!file.is_open()) {
-            throw std::runtime_error("Cannot open file");
+            throw runtime_error("Cannot open file");
             return animal;
         }
 
-        std::string line;
-        while (std::getline(file, line)) { //cut line with information about animal
-            std::stringstream ss(line);
-            std::string specie, nutrition, photo, description, aclass, family, genus;
+        string line;
+        while (getline(file, line)) { //cut line with information about animal
+            stringstream ss(line);
+            string specie, nutrition, photo, description, aclass, family, genus;
 
-            std::getline(ss, specie, ';');
-            std::getline(ss, nutrition, ';');
-            std::getline(ss, photo, ';');
-            std::getline(ss, description, ';');
-            std::getline(ss, aclass, ';');
-            std::getline(ss, family, ';');
-            std::getline(ss, genus, ';');
+            getline(ss, specie, ';');
+            getline(ss, nutrition, ';');
+            getline(ss, photo, ';');
+            getline(ss, description, ';');
+            getline(ss, aclass, ';');
+            getline(ss, family, ';');
+            getline(ss, genus, ';');
 
             if (specie == targetSpecie) { // if animal exists
                 animal.setSpecie(specie);
@@ -96,7 +96,7 @@ void categories::on_returnButton_clicked() // function to return to the main win
     emit MAINreturn();
 }
 
-void categories::ChangeCard(std::string text){ // function to change animal card
+void categories::ChangeCard(string text){ // function to change animal card
     Animal actual;
     actual = actual.findAnimalBySpecie(text);
     if(actual.getSpecie() != "no info"){
@@ -112,7 +112,7 @@ void categories::ChangeCard(std::string text){ // function to change animal card
         else
             ui->animalNutritionLabel->setStyleSheet("color: rgb(0, 0, 0); font-size: 200px; font-weight: bold; border: none; margin: 0px; padding: 0px; background-color: transparent; text-align: center; qproperty-alignment: 'AlignCenter'; background-color: transparent;");
 
-        std::string a = actual.getPhoto();
+        string a = actual.getPhoto();
         ssss = QString::fromStdString(a);
         QPixmap pix2(ssss);
         ui->animalPhotoLabel->setPixmap(pix2);
@@ -137,14 +137,14 @@ void categories::ChangeCard(std::string text){ // function to change animal card
 void categories::on_SearchLineCat_returnPressed() //receives information from search line
 {
     QString Searchtext = ui->SearchLineCat->text();
-    std::string text = Searchtext.toStdString();
+    string text = Searchtext.toStdString();
     categories::ChangeCard(text);
 }
 
 void categories::on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column)//receives information from tree widget
 {
     QString ITEMtext = item->text(column);
-    std::string text = ITEMtext.toStdString();
+    string text = ITEMtext.toStdString();
     categories::ChangeCard(text);
 }
 

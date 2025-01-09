@@ -88,14 +88,13 @@ padding: 20px;
     <property name="styleSheet">
      <string notr="true">QLineEdit {
 background-color: rgb(157, 212, 234);
-
-        font: 32pt &quot;Mongolian Baiti&quot;;
+    font: 32pt &quot;Mongolian Baiti&quot;;
     color: rgb(110, 110, 110);
     border-radius: 8px; 
     border: 1px solid #9DD4EA; 
     padding: 5px 10px;
-border: 1px solid rgb(100, 100, 100);
-
+    border: 1px solid rgb(100, 100, 100);
+    text-align: center;
 }
 QLineEdit:focus {
     border: 2px solid #6B8E23;
@@ -334,7 +333,7 @@ background: transparent;
     <rect>
      <x>770</x>
      <y>191</y>
-     <width>420</width>
+     <width>430</width>
      <height>520</height>
     </rect>
    </property>
@@ -354,7 +353,7 @@ background: transparent;
      <rect>
       <x>9</x>
       <y>305</y>
-      <width>401</width>
+      <width>415</width>
       <height>208</height>
      </rect>
     </property>
@@ -364,17 +363,16 @@ background: transparent;
     border: 2px solid #006060;
    
 font: 12pt &quot;Mongolian Baiti&quot;;
-padding: 30px;
 }</string>
     </property>
     <property name="text">
-     <string>desc</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="animalPhotoLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>15</x>
       <y>45</y>
       <width>400</width>
       <height>225</height>
@@ -388,7 +386,7 @@ padding: 30px;
 }</string>
     </property>
     <property name="text">
-     <string>img</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="animalInfoLabel1">

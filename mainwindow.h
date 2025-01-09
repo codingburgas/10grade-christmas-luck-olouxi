@@ -5,11 +5,11 @@
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class MainWindow;
+struct MainWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+struct MainWindow : public QMainWindow
 {
     Q_OBJECT
 

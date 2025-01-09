@@ -3,10 +3,10 @@
 #include <QDialog>
 #include"qtreewidget.h"
 namespace Ui {
-class categories;
+struct categories;
 }
 
-class categories : public QDialog
+struct categories : public QDialog
 {
     Q_OBJECT
 
@@ -17,7 +17,7 @@ signals:
     void MAINreturn();
 private slots:
 
-
+    void ChangeCard(std::string text);
     void on_returnButton_clicked();
     void on_treeWidget_2_itemDoubleClicked(QTreeWidgetItem *item, int column);
     void on_animalCardCloseButton_clicked();

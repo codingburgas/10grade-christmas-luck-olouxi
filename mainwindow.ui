@@ -150,7 +150,7 @@ padding: 20px;
      <property name="geometry">
       <rect>
        <x>700</x>
-       <y>647</y>
+       <y>635</y>
        <width>251</width>
        <height>261</height>
       </rect>
@@ -248,7 +248,7 @@ QPushButton:focus {
 }</string>
      </property>
      <property name="text">
-      <string>Search</string>
+      <string>Exit</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">

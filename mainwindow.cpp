@@ -31,8 +31,7 @@ void MainWindow::on_CategoryButton_clicked()// go to Evolutionary Tree
     this->close();
 }
 
-void MainWindow::on_pushButton_clicked()// go to Evolutionary Tree
+void MainWindow::on_pushButton_clicked()// Exit
 {
-    category->show();
-    this->close();
+    close();
 }
