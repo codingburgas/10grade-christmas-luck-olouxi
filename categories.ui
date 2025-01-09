@@ -94,7 +94,7 @@ background-color: rgb(157, 212, 234);
     border: 1px solid #9DD4EA; 
     padding: 5px 10px;
     border: 1px solid rgb(100, 100, 100);
-    text-align: center;
+    
 }
 QLineEdit:focus {
     border: 2px solid #6B8E23;
@@ -333,8 +333,8 @@ background: transparent;
     <rect>
      <x>770</x>
      <y>191</y>
-     <width>430</width>
-     <height>520</height>
+     <width>420</width>
+     <height>465</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -351,18 +351,18 @@ background: transparent;
    <widget class="QLabel" name="animalDescriptionLabel">
     <property name="geometry">
      <rect>
-      <x>9</x>
+      <x>10</x>
       <y>305</y>
-      <width>415</width>
-      <height>208</height>
+      <width>400</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QWidget{
     background: #D0F4FF;
     border: 2px solid #006060;
-   
-font: 12pt &quot;Mongolian Baiti&quot;;
+    line-height: 5;
+font: 10pt &quot;Mongolian Baiti&quot;;
 }</string>
     </property>
     <property name="text">
@@ -372,7 +372,7 @@ font: 12pt &quot;Mongolian Baiti&quot;;
    <widget class="QLabel" name="animalPhotoLabel">
     <property name="geometry">
      <rect>
-      <x>15</x>
+      <x>10</x>
       <y>45</y>
       <width>400</width>
       <height>225</height>
