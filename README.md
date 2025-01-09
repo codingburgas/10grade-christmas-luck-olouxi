@@ -92,13 +92,6 @@ cd 10grade-christmas-luck-olouxi
   <li><strong>Anna Rikova</strong>: Frontend Developer</li>
 </ul>
 <hr>
-<h2>Credits</h2>
-<ul>
-  <li><strong>Google Slides</strong>: For presentations</li>
-  <li><strong>Google Docs</strong>: For detailed documentation</li>
-  <li><strong>Figma</strong>: For designing the application interface</li>
-</ul>
-<hr>
 <h2>Future Enhancements</h2>
 <ul>
   <li><strong>Expand Animal Database</strong>: Add more species with richer information.</li>
