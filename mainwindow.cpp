@@ -1,10 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QVBoxLayout>
 #include <QApplication>
-#include <QLineEdit>
-#include <QIcon>
-#include <QWidget>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , MAINW(new Ui::MainWindow)
